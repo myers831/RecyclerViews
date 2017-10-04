@@ -1,10 +1,12 @@
 package com.example.admin.recyclerviews;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,5 +48,10 @@ public class MainActivity extends AppCompatActivity {
         rvPersonList.setAdapter(personListAdapter);
 
 
+    }
+
+    public void goToAnimals(View view) {
+        Intent intent = new Intent(this, AnimalListActivity.class);
+        startActivity(intent);
     }
 }

@@ -3,18 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.admin.recyclerviews.MainActivity">
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="go to animals"
-        android:onClick="goToAnimals"/>
+    android:layout_height="wrap_content"
+    tools:context="com.example.admin.recyclerviews.AnimalListActivity">
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rvPersonList"/>
+        android:id="@+id/rvAnimalList"></android.support.v7.widget.RecyclerView>
 
 </android.support.constraint.ConstraintLayout>
